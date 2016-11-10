@@ -12,5 +12,9 @@ export class AppComponent {
   ninja = {
      name: "Bram",
      belt: "Red"
- };
+  };
+
+  yell(e) {
+     alert("I am yelling!");
+ }
 }
