@@ -11,6 +11,11 @@ export class HomeComponent implements OnInit {
    inputValue = "Ik ben Bram";
    inputBoolean = true;
 
+   ninja = {
+      name: "Yoshi",
+      belt: "Black"
+   };
+
    alertMe(val) {
       alert(val);
    }

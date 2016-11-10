@@ -7,3 +7,13 @@
 <input [value]="inputValue" />
 <input [attr.required]="inputBoolean" />
 <button (click)="alertMe('I am Bram')">Click me</button>
+<br />
+<br />
+
+<!-- Two way Data Binding -->
+<label>Name:</label>
+<input [(ngModel)]="ninja.name" />
+<label>Belt:</label>
+<input [(ngModel)]="ninja.belt" />
+<p>{{ninja.name}}</p>
+<p>{{ninja.belt}}</p>
