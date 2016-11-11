@@ -9,7 +9,7 @@ export class DataService {
   constructor(private http: Http) { }
 
   fetchData() {
-     return this.http.get('../assets/ninjas.json').map(
+     return this.http.get('https://angular-tutorial-bb4d3.firebaseio.com/.json').map(
         (res) => res.json()
      );
  }
