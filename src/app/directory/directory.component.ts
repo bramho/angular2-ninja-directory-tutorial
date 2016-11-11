@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from "@angular/router";
 
 @Component({
   selector: 'app-directory',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectoryComponent implements OnInit {
 
-  constructor() { }
+   ninjas = [
+      {name: "Yoshi", belt: "black"},
+      {name: "Ryu", belt: "red"},
+      {name: "Crystal", belt: "purple"}
+   ];
 
-  ngOnInit() {
-  }
+   constructor() {
+   }
+
+   ngOnInit() {
+   }
 
 }

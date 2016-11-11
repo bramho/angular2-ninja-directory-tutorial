@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from "@angular/router";
 
 import { APP_ROUTES } from "./app.routes";
+import { FilterPipe } from './filter.pipe';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -14,7 +15,8 @@ import { DirectoryComponent } from './directory/directory.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    DirectoryComponent
+    DirectoryComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
