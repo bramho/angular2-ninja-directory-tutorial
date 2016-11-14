@@ -17,4 +17,8 @@
    </li>
 </ul>
 
-<button (click)="logIt()">Log Me</button>
+<form id="add-ninja">
+   <input type="text" placeholder="Name" [(ngModel)]="name" [ngModelOptions]="{standalone: true}" />
+   <input type="text" placeholder="Belt Colour" [(ngModel)]="belt" [ngModelOptions]="{standalone: true}" />
+   <button (click)="fbPostData(name, belt)">Add ninja</button>
+</form>

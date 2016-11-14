@@ -26,6 +26,10 @@ export class DirectoryComponent implements OnInit {
       })
    }
 
+   fbPostData(name, belt) {
+      firebase.database().ref('/').push({belt: belt, name: name});
+   }
+
    ngOnInit() {
    //    this.dataService.fetchData().subscribe(
    //      (data) => this.ninjas = data
